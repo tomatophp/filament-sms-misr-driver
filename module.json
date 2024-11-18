@@ -1,0 +1,29 @@
+{
+    "name": "FilamentSmsMisrDriver",
+    "alias": "filament-sms-misr-driver",
+    "description": {
+        "ar": "SMS Misr Integration for Filament Alerts Sender",
+        "en": "SMS Misr Integration for Filament Alerts Sender",
+        "gr": "SMS Misr Integration for Filament Alerts Sender",
+        "sp": "SMS Misr Integration for Filament Alerts Sender"
+    },
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "TomatoPHP\\FilamentSmsMisrDriver\\FilamentSmsMisrDriverServiceProvider"
+    ],
+    "files": [],
+    "title": {
+        "ar": "Filament sms misr driver",
+        "en": "Filament sms misr driver",
+        "gr": "Filament sms misr driver",
+        "sp": "Filament sms misr driver"
+    },
+    "color": "#cc1448",
+    "icon": "heroicon-c-users",
+    "placeholder": "https://raw.githubusercontent.com/tomatophp/filament-sms-misr-driver/master/art/3x1io-tomato-sms-misr-driver.jpg",
+    "type": "plugin",
+    "version": "v1.0.0",
+    "github" : "https://github.com/tomatophp/filament-sms-misr-driver",
+    "docs" : "https://github.com/tomatophp/filament-sms-misr-driver"
+}
