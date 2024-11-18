@@ -7,7 +7,6 @@ use Filament\Panel;
 
 class FilamentSmsMisrDriverPlugin implements Plugin
 {
-
     public function getId(): string
     {
         return 'filament-sms-misr-driver';
