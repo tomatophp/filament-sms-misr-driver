@@ -1,4 +1,4 @@
-![Screenshot](https://raw.githubusercontent.com/tomatophp/filament-sms-misr-driver/master/art/3x1io-tomato-sms-misr-driver.jpg)
+![Screenshot](https://raw.githubusercontent.com/tomatophp/filament-sms-misr-driver/master/arts/fadymondy-tomato-sms-misr-driver.jpg)
 
 # Filament sms misr driver
 
@@ -7,6 +7,12 @@
 [![Downloads](https://poser.pugx.org/tomatophp/filament-sms-misr-driver/d/total.svg)](https://packagist.org/packages/tomatophp/filament-sms-misr-driver)
 
 SMS Misr Integration for Filament Alerts Sender
+
+## Version Compatibility
+
+| Plugin | Filament | Laravel     | PHP  |
+|--------|----------|-------------|------|
+| 5.x    | 5.x      | 12.x, 13.x  | 8.2+ |
 
 ## Installation
 
