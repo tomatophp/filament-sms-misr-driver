@@ -8,11 +8,15 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use TomatoPHP\FilamentAlerts\Traits\InteractsWithNotifications;
 use TomatoPHP\FilamentSmsMisrDriver\Tests\Database\Factories\UserFactory;
+use TomatoPHP\FilamentSmsMisrDriver\Traits\InteractsWithSmsMisr;
 
 class User extends Authenticatable implements FilamentUser, MustVerifyEmail
 {
     use HasFactory;
+    use InteractsWithNotifications;
+    use InteractsWithSmsMisr;
     use Notifiable;
 
     protected $guarded = [];

@@ -1,5 +1,4 @@
 providers:
-  - Filament\Schemas\SchemasServiceProvider
   - BladeUI\Icons\BladeIconsServiceProvider
   - BladeUI\Heroicons\BladeHeroiconsServiceProvider
   - Filament\Actions\ActionsServiceProvider
@@ -10,7 +9,9 @@ providers:
   - Filament\Support\SupportServiceProvider
   - Filament\Tables\TablesServiceProvider
   - Filament\Widgets\WidgetsServiceProvider
+  - Filament\Schemas\SchemasServiceProvider
   - RyanChandler\BladeCaptureDirective\BladeCaptureDirectiveServiceProvider
+  - TomatoPHP\FilamentAlerts\FilamentAlertsServiceProvider
   - TomatoPHP\FilamentSmsMisrDriver\FilamentSmsMisrDriverServiceProvider
   - TomatoPHP\FilamentSmsMisrDriver\Tests\AdminPanelProvider
 workbench:

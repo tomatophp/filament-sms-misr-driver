@@ -2,6 +2,7 @@
 
 namespace TomatoPHP\FilamentSmsMisrDriver;
 
+use Illuminate\Support\Facades\Config;
 use Illuminate\Support\ServiceProvider;
 use TomatoPHP\FilamentSmsMisrDriver\Console\FilamentSmsMisrDriverInstall;
 
@@ -52,6 +53,23 @@ class FilamentSmsMisrDriverServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
-        // you boot methods here
+        try {
+            // Settings saved from the settings hub win over the env based config, empty settings keep the config value.
+            foreach ([
+                'username' => 'sms_misr_username',
+                'password' => 'sms_misr_password',
+                'sender' => 'sms_misr_sender',
+                'environment' => 'sms_misr_environment',
+                'active' => 'sms_misr_active',
+            ] as $config => $setting) {
+                $value = setting($setting);
+
+                if (filled($value)) {
+                    Config::set("filament-sms-misr-driver.{$config}", $value);
+                }
+            }
+        } catch (\Exception $e) {
+            \Log::error($e);
+        }
     }
 }
